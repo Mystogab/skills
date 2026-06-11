@@ -36,6 +36,28 @@ without changing the repository structure.
 
 ---
 
+## Installation
+
+Skills can be installed using the `skills` CLI:
+
+```bash
+npx skills add mystogab/skills --list
+```
+
+To install a specific skill:
+
+```bash
+npx skills add mystogab/skills --skill <name>
+```
+
+### Installing `harness-doctor`
+
+```bash
+npx skills add mystogab/skills --skill harness-doctor
+```
+
+---
+
 ## Philosophy
 
 These skills are designed to improve reliability in AI-assisted software engineering workflows.
