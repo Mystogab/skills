@@ -1,56 +1,76 @@
 # Skills
 
-Reusable AI skills and governance workflows for software engineering projects.
+Reusable AI skills for software engineering, repository governance, and long-term AI-assisted development workflows.
+
+---
+
+## Philosophy
+
+AI-assisted development works better when projects expose clear operational context.
+
+These skills are designed to help AI systems:
+
+* understand repository structure
+* maintain architectural consistency
+* reduce governance drift
+* preserve long-term project memory
+* enforce conventions consistently
+* improve reliability across sessions
+
+The goal is not only better prompts, but more maintainable AI collaboration over time.
 
 ---
 
 ## Repository Structure
 
-```txt id="o4b0zd"
+```txt
 .
 ├── README.md
 └── skills
-    └── harness-doctor
-        └── SKILL.md
+    ├── harness-doctor
+    │   └── SKILL.md
+    └── ...
 ```
 
 Each skill lives in its own directory.
 
 The main entrypoint for a skill is:
 
-```txt id="h9wq2m"
+```txt
 SKILL.md
 ```
 
-This allows future expansion with:
+This structure allows future expansion per skill without changing the repository layout.
+
+Examples:
 
 * examples
 * assets
 * tests
 * schemas
-* supporting prompts
 * fixtures
+* supporting prompts
 * changelogs
-
-without changing the repository structure.
 
 ---
 
 ## Installation
 
-Skills can be installed using the `skills` CLI:
+Skills can be installed using the `skills` CLI.
+
+List available skills:
 
 ```bash
 npx skills add mystogab/skills --list
 ```
 
-To install a specific skill:
+Install a specific skill:
 
 ```bash
 npx skills add mystogab/skills --skill <name>
 ```
 
-### Installing `harness-doctor`
+Example:
 
 ```bash
 npx skills add mystogab/skills --skill harness-doctor
@@ -58,41 +78,29 @@ npx skills add mystogab/skills --skill harness-doctor
 
 ---
 
-## Philosophy
-
-These skills are designed to improve reliability in AI-assisted software engineering workflows.
-
-Focus areas include:
-
-* repository governance
-* architecture consistency
-* convention enforcement
-* documentation reliability
-* workflow standardization
-* long-term maintainability
-
----
-
 ## Included Skills
 
 ### `harness-doctor`
 
-Audits repository governance against implementation reality.
+Audits the Harness governance system against the actual project state.
+
+Designed for repositories using:
+
+* `AGENTS.md`
+* `.harness/`
+* architecture/convention governance workflows
 
 Detects:
 
 * governance drift
-* contradictory documentation
-* stale architecture docs
-* duplicated conventions
-* tooling mismatches
-* unenforced standards
+* stale project memory
+* contradictory instructions
+* fragmented sources of truth
+* unenforceable conventions
+* dead architectural decisions
+* misleading governance patterns
 
-Especially useful for repositories using:
-
-* `AGENTS.md`
-* `.harness/`
-* architecture/convention governance files
+Focuses on long-term AI reliability and governance consistency.
 
 ---
 
@@ -102,10 +110,10 @@ Skills use Markdown with YAML frontmatter metadata.
 
 Example:
 
-```md id="ez5v8o"
+```md
 ---
 name: harness-doctor
-description: Audit governance and architecture consistency.
+description: Audit Harness governance consistency.
 version: 1.1.0
 
 author:
@@ -120,14 +128,14 @@ author:
 
 ## Status
 
-Experimental.
+Experimental and evolving.
 
-The structure and conventions in this repository are still evolving.
+The repository structure, conventions, and governance patterns may continue to change as the ecosystem matures.
 
 ---
 
 ## Author
 
-Created by Gabriel Desimone
+Created by Gabriel Desimone.
 
-GitHub: [Mystogab/skills](https://github.com/Mystogab/skills)
+GitHub: [Mystogab/skills](https://github.com/Mystogab/skills?utm_source=chatgpt.com)
